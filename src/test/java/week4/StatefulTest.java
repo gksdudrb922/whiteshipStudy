@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class StatefulTest {
+class StatefulTest {
 
     private int number;
 
