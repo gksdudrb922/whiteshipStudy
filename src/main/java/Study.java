@@ -1,26 +1,29 @@
-public class Study {
+class Tv {
 
-    public String joinString() {
-        String profile = "안녕하세요." +
-                "Intellij 강의에 오신것을" +
-                "환영합니다.";
+    //Tv의 속성(멤버변수)
+    String color; //색상
+    boolean power; //전원상태(on/off)
+    int channel; //채널
 
-        return profile;
+    Tv(String color) {
+        this(color, true, 0);
     }
 
-    public String createQuery() {
-        String query = "SELECT" +
-                "FROM member" +
-                "WHERE member.name = 'han'";
-        return query;
+    Tv(String color, boolean power, int channel) {
+        this.color = color;
+        this.power = power;
+        this.channel = channel;
     }
 
-    public void moveLineAndStatement() {
 
-        System.out.println("라인 혹은 구문 단위로 이동시킵니다");
+    //Tv의 기능(메서드)
+    void power() { power = !power;} //Tv를 켜거나 끄는 기능을 하는 메서드
+    void channelUp() { channel++; } //Tv의 채널을 높이는 기능을 하는 메서드
+    void channelDown() { channel--; } //Tv의 채널을 낮추는 기능을 하는 메서드
+}
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
+class TvTest {
+    public static void main(String[] args) {
+        Tv t = new Tv("white", true, 7);
     }
 }
