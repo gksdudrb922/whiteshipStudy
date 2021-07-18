@@ -1,2 +1,0 @@
-operator/Problem1.java
- operator.Problem1
