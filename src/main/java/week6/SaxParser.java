@@ -10,6 +10,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
+// 순차적으로 parsing
 public class SaxParser {
 
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
