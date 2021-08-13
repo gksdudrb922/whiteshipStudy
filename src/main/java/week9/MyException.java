@@ -13,6 +13,11 @@ public class MyException extends Exception {
         this(message, 400); //ERROR_CODE를 400(기본값)으로 초기화한다.
     }
 
+    public MyException(String message, Throwable cause, int errorCode) {
+        super(message, cause);
+        ERROR_CODE = errorCode;
+    }
+
     public int getErrorCode() {
         return ERROR_CODE;
     }
